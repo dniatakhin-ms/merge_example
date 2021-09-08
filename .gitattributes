@@ -1,2 +1,2 @@
 # MergeUtils for *.json
-*.json merge=json_merge
+#*.json merge=json_merge
