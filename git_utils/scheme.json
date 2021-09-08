@@ -1,0 +1,73 @@
+{
+   "^.map-editor/quests.*.json": {
+        "merge_arrays": [
+            {
+                "path": "quests",
+                "type" : "merge_set",
+				"keys": ["quest_id"]
+            }
+        ]
+   },
+   "^resources/locales.*.json": {
+		"merge_arrays": [
+            {
+                "path": "",
+                "type" : "merge_set",
+				"keys": ["id"]
+            }
+        ]
+   },
+   "resources/jsons/push_notifications_triggers.json": {
+		"merge_arrays": [
+            {
+                "path": "push_notifications_triggers/triggers_sequence",
+                "type" : "merge_set",
+				"keys": ["trigger"]
+            }
+        ]
+   },
+   "resources/jsons/avatars.json": {
+		"merge_arrays": [
+            {
+                "path": "avatars",
+                "type" : "merge_set",
+				"keys": ["id"]
+            }
+        ]
+   },
+   "resources/jsons/competitions.json": {
+		"merge_arrays": [
+            {
+                "path": "Competitions",
+                "type" : "merge_set",
+				"keys": ["Name"]
+            }
+        ]
+   },
+   "resources/jsons/custom_resource.json": {
+		"merge_arrays": [
+            {
+                "path": "custom_resource/#/map_info",
+                "type" : "merge_set",
+				"keys": ["resource_id"]
+            }
+        ]
+   },
+   "resources/jsons/custom_upgrade.json": {
+		"merge_arrays": [
+            {
+                "path": "custom_upgrade",
+                "type" : "merge_set",
+				"keys": ["building_id"]
+            }
+        ]
+   },
+   "resources/jsons/constants.json": {
+		"mege_object": [
+			{
+				"path": "Competitions/#",
+				"type" : "merge_not_union"
+			}
+		]
+   }
+}
